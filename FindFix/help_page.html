@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Help</title>
+    <link rel="stylesheet" href="styling/style.css" />
+    <link rel="stylesheet" href="styling/bantuan.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Montserrat&family=Mukta+Mahee&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"
+      integrity="sha512-oL84kLQMEPIS350nZEpvFH1whU0HHGNUDq/X3WBdDAvKP7jn06gHTsCsymsoPYKF/duN8ZxzzvQgOaaZSgcYtQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/faq.js"></script>
+  </head>
+  <body>
+    <nav class="d-flex">
+      <div class="content_80">
+        <div class="logo">
+          <a href="./landing_page.html">
+            <h3 id="Logo_EliTrash">Find Fix</h3>
+          </a>
+        </div>
+        <div class="rest">
+          <div class="nav_links">
+            <div style="position: relative">
+              <a class="links" href="./community_page.html">Community</a>
+            </div>
+            <div style="position: relative">
+              <a class="links" href="./Order_page.html">Order Service</a>
+            </div>
+            <div style="position: relative">
+              <a class="links active-nav" href="./help_page.html">Help</a>
+            </div>
+            <div style="position: relative">
+              <a class="links" href="./aboutus_page.html">About Us</a>
+            </div>
+          </div>
+          <div onclick="modalClick()" class="account">
+            <div class="acc_pic">
+              <img src="assets/acc.png" alt="" id="account_pic" />
+            </div>
+
+            <div class="account_profile">
+              <p style="margin: 0">John Wick</p>
+              <div class="lastt">
+                <img src="assets/koin.png" alt="" id="koin_pic" />
+                <p style="margin: 0">500</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="modalID" class="modal-bs modal-hidden">
+          <ul>
+            <a href="/profile_page.html"><li>Profile</li></a>
+            <a href="/point_page.html"><li>Points</li></a>
+            <a href="/register_page.html"><li>Log Out</li></a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="main-wrapper">
+      <div class="d-flex justify-content-center" style="gap: 280px">
+        <div class="landing-text">
+          <h1>Need Help?</h1>
+          <p style="font-size: 22px; font-weight: bold">
+            Create a Ticket or Contact us:
+          </p>
+          <p class="sub-text">Telephone</p>
+          <p class="sub-text fw-bold">+79131234567</p>
+          <p class="sub-text">Email</p>
+          <p class="sub-text fw-bold">Snoop@gmail.com</p>
+          <div class="d-flex justify-content-between mt-5">
+            <button onclick="window.location.href='#buatTiket'" class="btn-top">
+              Create Ticket
+            </button>
+            <button onclick="window.location.href='#faq'" class="btn-top">
+              FAQ
+            </button>
+          </div>
+        </div>
+        <div class="img-wrap">
+          <img src="assets/bantuan.png" alt="" />
+        </div>
+      </div>
+      <div id="buatTiket" class="buat-tiket">
+        <div class="tiket-text">
+          <h3>Create Ticket</h3>
+          <p class="m-0">
+            Please Ask here if you have not found the answer
+            to your question
+          </p>
+        </div>
+        <div style="margin-top: 14px" class="form-wrapper">
+          <div>
+            <label for="nama">Name</label>
+            <div class="select-wrapper">
+              <input
+                placeholder="Enter Name"
+                class="select-input fs-gothic"
+                type="text"
+                name="nama"
+              />
+            </div>
+          </div>
+          <div style="display: flex; gap: 3em">
+            <div style="flex-basis: 50%">
+              <label for="email">Email</label>
+              <div class="select-wrapper">
+                <input
+                  placeholder="Enter Email"
+                  class="select-input fs-gothic"
+                  type="text"
+                  name="email"
+                />
+              </div>
+            </div>
+            <div style="flex-basis: 50%">
+              <label for="no_telp">Phone</label>
+              <div class="select-wrapper">
+                <input
+                  placeholder="Enter Phone Number"
+                  class="select-input fs-gothic"
+                  type="text"
+                  name="no_telp"
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <label for="alamat">Question</label>
+            <div class="select-wrapper">
+              <textarea
+                placeholder="Please type your question"
+                class="select-input fs-gothic"
+                name="alamat"
+                rows="4"
+              ></textarea>
+            </div>
+          </div>
+          <div>
+            <label for="foto_sampah">File (optional)</label>
+            <div class="select-wrapper">
+              <div style="position: relative">
+                <input
+                  id="inputFoto"
+                  placeholder="Enter Name"
+                  class="select-input input-invisible"
+                  type="file"
+                  name="foto_sampah"
+                />
+                <div class="mock-button" onclick="clickFoto()">
+                  <img src="assets/foto.png" />
+                  <p class="m-0">Insert File</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="tukar-btn mt-3">Kirim</button>
+        </div>
+      </div>
+      <div id="faq" class="faq">
+        <div
+          class="tiket-text fs-montserrat faq mt-5 mb-3"
+          style="font-size: 40px"
+        >
+          FAQ
+        </div>
+        <div class="container-main accordion" id="accordionParent">
+          <div class="row row-faq" style="margin-bottom: 20px">
+            <div class="col">
+              <div>
+                <div class="d-flex w-100">
+                  <div
+                    style="
+                      flex-basis: 100%;
+                      overflow: hidden;
+                      text-overflow: ellipsis;
+                    "
+                  >
+                    <button
+                      id="btn-faq-a"
+                      value="a"
+                      onclick="changeColor('btn-faq-a','plus-icon-a')"
+                      class="btn-faq btn w-100 d-flex justify-content-between align-items-center"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#multiCollapseExample1"
+                      aria-expanded="false"
+                      aria-controls="multiCollapseExample1"
+                    >
+                      <span class="faq-btn">
+                        How can I Register in Find Fix?
+                      </span>
+                      <div class="d-flex align-items-center">
+                        <img id="plus-icon-a" src="assets/plus.svg" />
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="collapse multi-collapse"
+                id="multiCollapseExample1"
+                data-parent="#accordionParent"
+              >
+                <div class="card card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life
+                  accusamus terry richardson ad squid. Nihil anim keffiyeh
+                  helvetica, craft beer labore wes anderson cred nesciunt
+                  sapiente ea proident.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-faq" style="margin-bottom: 20px">
+            <div class="col">
+              <div>
+                <div class="d-flex">
+                  <div
+                    style="
+                      flex-basis: 100%;
+                      overflow: hidden;
+                      text-overflow: ellipsis;
+                    "
+                  >
+                    <button
+                      id="btn-faq-b"
+                      onclick="changeColor('btn-faq-b','plus-icon-b')"
+                      class="btn-faq btn w-100 d-flex justify-content-between align-items-center"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#multiCollapseExample2"
+                      aria-expanded="false"
+                      aria-controls="multiCollapseExample2"
+                    >
+                      <span class="faq-btn">
+                        What are the Processes for ordering?
+                      </span>
+                      <div class="d-flex align-items-center">
+                        <img id="plus-icon-b" src="assets/plus.svg" />
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="collapse multi-collapse"
+                id="multiCollapseExample2"
+                data-parent="#accordionParent"
+              >
+                <div class="card card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life
+                  accusamus terry richardson ad squid. Nihil anim keffiyeh
+                  helvetica, craft beer labore wes anderson cred nesciunt
+                  sapiente ea proident.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-faq" style="margin-bottom: 20px">
+            <div class="col">
+              <div>
+                <div class="d-flex">
+                  <div
+                    style="
+                      flex-basis: 100%;
+                      overflow: hidden;
+                      text-overflow: ellipsis;
+                    "
+                  >
+                    <button
+                      id="btn-faq-c"
+                      onclick="changeColor('btn-faq-c','plus-icon-c')"
+                      class="btn-faq btn w-100 d-flex justify-content-between align-items-center"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#multiCollapseExample3"
+                      aria-expanded="false"
+                      aria-controls="multiCollapseExample3"
+                    >
+                      <span class="faq-btn">
+                        How can I see my Points?
+                      </span>
+                      <div class="d-flex align-items-center">
+                        <img id="plus-icon-c" src="assets/plus.svg" />
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="collapse multi-collapse"
+                id="multiCollapseExample3"
+                data-parent="#accordionParent"
+              >
+                <div class="card card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life
+                  accusamus terry richardson ad squid. Nihil anim keffiyeh
+                  helvetica, craft beer labore wes anderson cred nesciunt
+                  sapiente ea proident.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-faq" style="margin-bottom: 20px">
+            <div class="col">
+              <div>
+                <div class="d-flex">
+                  <div
+                    style="
+                      flex-basis: 100%;
+                      overflow: hidden;
+                      text-overflow: ellipsis;
+                    "
+                  >
+                    <button
+                      id="btn-faq-d"
+                      onclick="changeColor('btn-faq-d','plus-icon-d')"
+                      class="btn-faq btn w-100 d-flex justify-content-between align-items-center"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#multiCollapseExample4"
+                      aria-expanded="false"
+                      aria-controls="multiCollapseExample4"
+                    >
+                      <span class="faq-btn">
+                        How can i edit my profile?
+                      </span>
+                      <div class="d-flex align-items-center">
+                        <img id="plus-icon-d" src="assets/plus.svg" />
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="collapse multi-collapse"
+                id="multiCollapseExample4"
+                data-parent="#accordionParent"
+              >
+                <div class="card card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life
+                  accusamus terry richardson ad squid. Nihil anim keffiyeh
+                  helvetica, craft beer labore wes anderson cred nesciunt
+                  sapiente ea proident.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-faq" style="margin-bottom: 20px">
+            <div class="col">
+              <div>
+                <div class="d-flex">
+                  <div
+                    style="
+                      flex-basis: 100%;
+                      overflow: hidden;
+                      text-overflow: ellipsis;
+                    "
+                  >
+                    <button
+                      id="btn-faq-e"
+                      onclick="changeColor('btn-faq-e','plus-icon-e')"
+                      class="btn-faq btn w-100 d-flex justify-content-between align-items-center"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#multiCollapseExample5"
+                      aria-expanded="false"
+                      aria-controls="multiCollapseExample5"
+                    >
+                      <span class="faq-btn">
+                        What are the communities used for?
+                      </span>
+                      <div class="d-flex align-items-center">
+                        <img id="plus-icon-e" src="assets/plus.svg" />
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="collapse multi-collapse"
+                id="multiCollapseExample5"
+                data-parent="#accordionParent"
+              >
+                <div class="card card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life
+                  accusamus terry richardson ad squid. Nihil anim keffiyeh
+                  helvetica, craft beer labore wes anderson cred nesciunt
+                  sapiente ea proident.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-faq" style="margin-bottom: 20px">
+            <div class="col">
+              <div>
+                <div class="d-flex">
+                  <div
+                    style="
+                      flex-basis: 100%;
+                      overflow: hidden;
+                      text-overflow: ellipsis;
+                    "
+                  >
+                    <button
+                      id="btn-faq-f"
+                      onclick="changeColor('btn-faq-f','plus-icon-f')"
+                      class="btn-faq btn w-100 d-flex justify-content-between align-items-center"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#multiCollapseExample6"
+                      aria-expanded="false"
+                      aria-controls="multiCollapseExample6"
+                    >
+                      <span class="faq-btn">
+                        How to contact Find Fix?
+                      </span>
+                      <div class="d-flex align-items-center">
+                        <img id="plus-icon-f" src="assets/plus.svg" />
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="collapse multi-collapse"
+                id="multiCollapseExample6"
+                data-parent="#accordionParent"
+              >
+                <div class="card card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life
+                  accusamus terry richardson ad squid. Nihil anim keffiyeh
+                  helvetica, craft beer labore wes anderson cred nesciunt
+                  sapiente ea proident.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="about_us">
+        <div class="about_us_blocks">
+          <h3 id="Logo_EliTrash">FindFix</h3>
+          <h6>Find Fix Corp</h6>
+          <p>Buyanovskiy 3A Street –<br />634050, Tomsk,<br />Russian Federation.</p>
+        </div>
+        <div class="about_us_blocks">
+          <h5>About Us</h5>
+          <p>Profile</p>
+          <p>FAQ</p>
+          <p>Privacy and Policy</p>
+        </div>
+        <div class="about_us_blocks">
+          <h5>Contact</h5>
+          <p>+79131234567</p>
+          <p>Snoop@gmail.com</p>
+        </div>
+        <div class="about_us_blocks">
+          <h5>Follow Us</h5>
+          <div class="about_us_icon_block">
+            <img src="assets/ig.png" alt="" id="about_us_icons" />
+            <img src="assets/fb.png" alt="" id="about_us_icons" />
+            <img src="assets/twit.png" alt="" id="about_us_icons" />
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2023 - Find Fix Corp. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      function modalClick() {
+        var modal = document.getElementById("modalID");
+        if (modal.classList.contains("modal-hidden")) {
+          modal.classList.remove("modal-hidden");
+        } else {
+          modal.classList.add("modal-hidden");
+        }
+      }
+    </script>
+  </body>
+</html>
